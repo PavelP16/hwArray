@@ -5,12 +5,12 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("\nЗадача №1__________________________________________________________________________");
 
-        int[] weight = new int[12];
+        int[] weight = new int[3];
         weight[0] = 1;
         weight[1] = 2;
-        weight[2] = 4;
+        weight[2] = 3;
 
-        double[] weightD = new double[10];
+        double[] weightD = new double[3];
         weightD[0] = 1.57;
         weightD[1] = 7.654;
         weightD[2] = 9.986;
@@ -47,15 +47,12 @@ public class Main {
 
         System.out.println("\nЗадача №4__________________________________________________________________________");
 
-        int[] arrayNumbers = new int[]{12, 17, 35, 14, 15, 9};
-
-            for (int y = 1; y < arrayNumbers.length; y++) {
-                arrayNumbers [y] +=1;
-            }System.out.println(Arrays.toString(arrayNumbers));
-
-
-
-
+        for (i = 0; i < weight.length; i++) {
+            if (weight[i] % 2 != 0) {
+                weight[i]++;
+            }
+            System.out.print(weight[i] + " ");
+        }
 
 
     }
